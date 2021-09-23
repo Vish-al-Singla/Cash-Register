@@ -5,15 +5,16 @@ const errorMessage = document.querySelector("#error-message");
 
 
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
-    errorMessage.getElementsByClassName.display ="none";
+    errorMessage.style.display ="none";
     if(billAmount.value>0) {
         if(cashGiven.value >0){
             if(cashGiven.value >= billAmount.value ){
                 const amountToBeReturned = cashGiven - billAmount;
+                calculateChange(amountToBeReturned);
             }
             else 
             {
-                showMessage("The Cash provided should be atleast equal to the bill amount");
+                showMessage("Do you wanna wash plates?");
             }
         }
     }
@@ -27,6 +28,6 @@ function calculateChange() {
 }
 
 function showMessage(message) {
-    errorMessage.getElementsByClassName.display = "block"; 
+        errorMessage.style.display = "block"; 
         errorMessage.innerText = message;
 }
