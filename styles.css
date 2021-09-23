@@ -1,6 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Black Ops One', cursive;
+}
+
+:root {
+    --dark-green :#064E3B;
+    --gold : 	#E1B530;
+}
+
 .container {
+    color: var(--gold);
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    max-width: 35vw;
     margin: auto;
+    text-align: center;
+    background-color:var(--dark-green);
+    padding: 2rem 1rem;
+
+   
+
+}
+
+.heading { 
+    padding:1rem;
+    text-align: center;
+}
+
+p { 
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+input {
+
+    width: 100%;
+    padding: 0.5rem;
+    height: 50px;
+    display: block;
+}
+
+label {
+    font-size: x-large;
+    padding: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    margin: 1rem auto 0;
+    color: var(--dark-green);
+    font-weight: bold;
 }
