@@ -47,7 +47,7 @@ checkBtn.addEventListener('click', ()=>{
             return;
         }
         if(billAmtValue > cashGivenValue){
-            showError("Cash is less than bill, please enter right amount");
+            showError("Cash is less than bill, get ready to wash dishes!");
             return;
         }
         //if input valid calculate no. of notes
