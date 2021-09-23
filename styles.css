@@ -1,62 +1,76 @@
-* {
-    padding: 0;
-    margin: 0;
+:root{
+    --dark-green : #064E3B;
+    --faint-green: #A7F3D0;
+    --gold : #CCAC00;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
-
-body {
-    font-family: 'Black Ops One', cursive;
+body{
+    margin: 0;
 }
 
-:root {
-    --dark-green :#064E3B;
-    --gold : 	#E1B530;
-    --faint-green: #A7F3D0;
-}
-
-.container {
+.section{width: 100%;max-width: 500px;min-height: 200px;margin: auto;padding: 2rem 1rem;text-align: center;background-color: var(--dark-green);}
+h1, p{
     color: var(--gold);
-    display: flex;
-    flex-direction: column;
-    max-width: 35vw;
-    margin: auto;
-    text-align: center;
-    background-color:var(--dark-green);
-    padding: 2rem 1rem;
-
-   
-
+}
+.label{
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem 0.5rem;
+    color: var(--gold);
 }
 
-.heading { 
-    padding:1rem;
-    text-align: center;
-}
 
-p { 
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-input {
-
+input{
     width: 100%;
-    padding: 0.5rem;
+    padding: 1rem;
     height: 50px;
     display: block;
 }
 
-label {
-    font-size: x-large;
-    padding: 1rem;
-}
-
-button {
+button{
     padding: 0.5rem 1rem;
     display: block;
     font-size: 1rem;
     border: none;
     margin: 1rem auto 0;
-    background-color: var(--faint-green);
+    background-color:var(--gold);
     color: var(--dark-green);
     font-weight: bold;
+}
+
+.cashGivenInput{
+    display: none;
+}
+.changeReturn{
+    display: none;
+}
+.errorMsg{
+    padding-top: 1rem;
+    color:#FFE34D;
+}
+#output{
+    margin: 1rem 0;    
+}
+
+#output table, th, td{
+    padding: 0.2rem;
+    color: var(--dark-green);
+    background-color:var(--gold);
+    border: 2px solid var(--dark-green) ;
+    border-collapse: collapse;
+}
+.noOfNotes{
+    background-color:white;
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+th,td{
+    word-wrap: break-word;
 }

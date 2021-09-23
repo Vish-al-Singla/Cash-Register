@@ -2,50 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-    <title>💰 Cash Register</title>
+    <title>Cash Register Manager</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="heading">Cash Register Manager</h1>
+    <section class="section">
+        <h1>Cash Register Manager</h1>
         <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
-        <label for="bill-amount">Bill Amount: </label>
-        <input id="bill-amount" type="number"/>
-        <label for="cash-given">Cash Given: </label>
-        <input id="cash-given" type="number"/>
-        <button id="check-button">check</button>
-        <p id="error-message"></p>
-        <table class="change-table">
-            <caption>
-                Return Change :
-            </caption>
-            <tr>
-                <th>No of Notes</th>
-               <td class="no-of-notes"></td>
-               <td class="no-of-notes"></td>
-               <td class="no-of-notes"></td>
-               <td class="no-of-notes"></td>
-               <td class="no-of-notes"></td>
-               <td class="no-of-notes"></td>
-               <td class="no-of-notes"></td>
-            </tr>
-            <tr>
-                <th>Notes</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
-    </div>
+        <div>
+            <div class="label">Bill Amount:</div>
+            <input type="number" id="billAmt" > 
+            <button id="nextBtn">Next</button> 
+        </div>
+
+        <div class="cashGivenInput">
+            <div class="label">Cash Given:</div>
+            <input type="number" id="cashGiven" >
+            <button id="checkBtn">Check</button> 
+        </div>
+        <div class="errorMsg"></div>
+
+        <div class="changeReturn">
+            <div class="label">Return Change:</div>
+            <div id="output">
+                <table>
+                    <tr>
+                    <th>No.of Notes</td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    </tr>
+                    <tr>
+                    <th>Note</td>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="index.js"></script>
 </body>
-<script src="./index.js"></script>
 </html>
