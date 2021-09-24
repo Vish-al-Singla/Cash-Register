@@ -14,7 +14,8 @@ body {
     margin-top: 2rem;
     background: url("./money.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 50%;
+    background-position: right;
 }
 
 .section {
@@ -22,6 +23,7 @@ body {
     max-width: 500px;
     min-height: 200px;
     margin: auto;
+    margin-left: 26vw;
     padding: 2rem 1rem;
     text-align: center;
     background-color: var(--faint-green);
